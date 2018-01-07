@@ -5,6 +5,8 @@
   <title>Hello</title>
   <link rel='stylesheet' href='/stylesheets/style.css'>
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
 
 </head>
 <body>
@@ -16,8 +18,15 @@
             </div>
         </section>
         <section>
+        <!-- Using Flickity as a pugin as it is responsive and easy to use and customise. Would create my own if I had enough time. -->
             <div class="large_image carousel">
-                <p> Feature image or slider </p>
+                <div class="gallery js-flickity">
+                  <div class="gallery-cell"> IMAGE 1</div>
+                  <div class="gallery-cell"> IMAGE 2</div>
+                  <div class="gallery-cell"> IMAGE 3</div>
+                  <div class="gallery-cell"> IMAGE 4</div>
+                  <div class="gallery-cell"> IMAGE 5</div>
+                </div>
             </div>
             <div id="first_text_wrapper">
                 <div id="large_blurb">

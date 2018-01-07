@@ -5,6 +5,7 @@
   <title>Hello</title>
   <link rel='stylesheet' href='/stylesheets/style.css'>
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
 </head>
 <body>
     <div id="wrapper">
@@ -28,7 +29,7 @@
             </div>
             <div class="second_image_wrapper">
                 <div class="large_image">
-                    <p> Image <p>
+                    <button id="modalButton"> + </button>
                  </div>
                  <div class="small_blurb">
                     <h1> BLURB </h1>
@@ -97,24 +98,52 @@
                         <li class="flex-cube"> <p></p></li>
                         <li class="flex-cube with_text">
                             <h4> Project Name</h4>
-                            <h5> info about project </h5>
+                            <h5> My code doesn't work </h5>
                         </li>
                         <li class="flex-cube with_text">
                             <h4> Project Name</h4>
-                            <h5> info about project </h5>
+                            <h5> I have no idea why </h5>
                         </li>
                         <li class="flex-cube with_text">
                             <h4> Project Name</h4>
-                            <h5> info about project </h5>
+                            <h5> My code works </h5>
                         </li>
                         <li class="flex-cube with_text">
                             <h4> Project Name</h4>
-                            <h5> info about project </h5>
+                            <h5> I have no idea why </h5>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
     </div>
+
+  <!-- Added modal content at end so it can be easily identified and re-used -->
+    <div id="first_modal" class="modal_wrapper">
+        <div class="modal_container">
+            <div class="model_content">
+                <span id="close">&times;</span>
+                <h1>MODAL</h1>
+                <h5>MODAL CONTENT</h5>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Get the modal and the button to open and close modal
+var modal = window.document.getElementById('first_modal');
+var button = window.document.getElementById('modalButton');
+var span = window.document.getElementById("close");
+
+// open and close the modal when user clicks on x button
+button.onclick = function() {
+     modal.style.display = "block";
+};
+span.onclick = function() {
+    modal.style.display = "none";
+};
+
+</script>
+
 </body>
 </html>

@@ -31,12 +31,14 @@ h5 {
     height: 50vh;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
 }
 
 #first_text_wrapper {
     height: 40vh;
     text-align: center;
     margin: 50px 0;
+
 }
 
 .main_title {
@@ -49,6 +51,18 @@ h5 {
     color: white;
     padding: 20px 40px;
     letter-spacing: 3px;
+}
+
+#modalButton {
+    background-color: #2e2e2e;
+    color: white;
+    border: solid thin white;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    right: 0;
+    position: absolute;
+    font-size: 1em;
 }
 
 .small_blurb {
@@ -226,4 +240,39 @@ h5 {
  }
 .flex-cube.with_text {
     background-color: transparent !important;
+}
+
+/*/The modal*/
+.modal_wrapper {
+    background-color: white;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    margin-top: 100px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    height: 60vh;
+}
+.model_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.model_content h1 {
+    padding-top: 50px;
+    color: #2e2e2e;
+}
+
+
+#close {
+    color: #aaaaaa;
+    float: right;
+    padding-right: 30px;
+    font-size: 28px;
+    font-weight: bold;
 }

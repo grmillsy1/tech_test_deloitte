@@ -1,12 +1,28 @@
 body {
   background-color: black;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color: white;
 }
+h5 {
+   color: #9e9e9e
+}
+/*using nunito as it is the closest I can find to Avenir*/
 
 .header {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
    display: flex;
    justify-content: space-between;
+
+}
+.header h4 {
+    padding:10px;
+    background-color: #2e2e2e ;
+}
+.header h3 {
+    padding:10px;
 }
 /*section1*/
 .large_image {
@@ -20,12 +36,29 @@ body {
 #first_text_wrapper {
     height: 40vh;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
+
+#blurb_title {
+    font-size: 4em;
+    letter-spacing: 8px;
+}
+
+#large_blurb button {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    letter-spacing: 3px;
+}
+
 .small_blurb {
     text-align: center;
-    padding: 20vh;
+    padding: 15vh;
 }
+.small_blurb h1 {
+    letter-spacing: 5px;
+}
+
 .first_flex_wrapper {
     width: 70vw;
     height: 90vh;
@@ -78,15 +111,27 @@ body {
     position: relative;
 }
 .side_blurb {
-    bottom: 50%;
+    bottom: 40%;
     left: 100px;
     color: black;
     position: absolute;
+    width: 30vw;
 }
+.side_blurb h5 {
+    color: #9e9e9e !important;
+}
+.side_blurb h2::after{
+    content: " ";
+    border-top: solid thin #9e9e9e;
+    display: block;
+    margin-top: 20px;
+    width: 40px;
+}
+
 .breakout_image {
     margin: 50px 50px 0 0;
-    width: 600px;
-    height: 275px;
+    width: 50vw;
+    height: 40vh;
     background-color: #e6e6e6;
     position: absolute;
     bottom: 0;

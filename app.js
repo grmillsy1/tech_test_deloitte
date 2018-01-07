@@ -12,6 +12,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+// Changed view engine from default jade to html
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
